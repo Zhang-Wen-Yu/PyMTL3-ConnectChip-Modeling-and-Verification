@@ -1,0 +1,15 @@
+{
+    "target_name": "spitest",
+    "class_name": "TestHarness",
+    "file_name": "Module.SPI",
+    "master_file_name": "SPIMaster",
+    "master_module_name": "SpiMasterWarpped",
+    "master_class_name": "Spi_Master_Warpped",
+    "slave_file_name": "SPISlave",
+    "slave_module_name": "SpiSlaveWarpped",
+    "slave_class_name": "Spi_Slave_Warpped",
+    "port_num": 4,
+    "con_state": [1, 1, 1, 1],
+    "master_port":["master_infer.miso","master_infer.cs","master_infer.mosi","master_infer.sclk"],
+    "slave_port": ["slave_inter.miso","slave_inter.cs","slave_inter.mosi","slave_inter.sclk"]
+}

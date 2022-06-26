@@ -1,0 +1,20 @@
+{
+    "target_name": "sramtest",
+    "class_name": "TestHarness",
+    "file_name": "Module.SDRAM",
+    "master_file_name": "SDRAMContr",
+    "master_module_name": "SdramCtr",
+    "master_class_name": "SdramContr",
+    "slave_file_name": "SDRAM",
+    "slave_module_name": "Sdram",
+    "slave_class_name": "Sdram",
+    "port_num": 9,
+    "control_param": "num_bits, num_words ,bank_num",
+    "test_src_param": "44",
+    "test_sink_param": "40",
+    "con_state": [1, 1, 1, 1, 1, 1, 1, 1, 1],
+    "master_port":["sdramctr_inter.CE1","sdramctr_inter.WE1","sdramctr_inter.OE1","sdramctr_inter.CS1",
+        "sdramctr_inter.A1","sdramctr_inter.I1","sdramctr_inter.O1","sdramctr_inter.WBM1","sdramctr_inter.BA1"],
+    "slave_port": ["sdram_inter.CE1","sdram_inter.WE1","sdram_inter.OE1","sdram_inter.CS1",
+        "sdram_inter.A1","sdram_inter.I1","sdram_inter.O1","sdram_inter.WBM1","sdram_inter.BA1"]
+}

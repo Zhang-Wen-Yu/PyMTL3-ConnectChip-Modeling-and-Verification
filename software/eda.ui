@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1211</width>
+    <height>785</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="3" column="1">
+     <widget class="QGroupBox" name="Connect_Configure_groupBox">
+      <property name="title">
+       <string>Connect Configure</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="2" column="1">
+        <widget class="QPushButton" name="Connect_button">
+         <property name="text">
+          <string>Connect</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QPushButton" name="Master_Button_Brower">
+         <property name="text">
+          <string>Browser</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QPushButton" name="Update_Button">
+         <property name="text">
+          <string>Update</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="Master_File_label">
+         <property name="text">
+          <string>Master File：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="Master_File_Line_Edit"/>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="Slave_File_Line_Edit"/>
+       </item>
+       <item row="1" column="2">
+        <widget class="QPushButton" name="Slave_Button">
+         <property name="text">
+          <string>Browser</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="Slave_File_label">
+         <property name="text">
+          <string>Slave  File：</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QGroupBox" name="Mode_Selection_groupbox">
+      <property name="title">
+       <string>Mode Selection</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="1" column="2">
+        <widget class="QPushButton" name="Apply_button_inmode">
+         <property name="text">
+          <string>Apply</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QComboBox" name="Mode_select_comboBox"/>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="Current_Mode_label">
+         <property name="text">
+          <string>Current Mode：</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QGroupBox" name="json_file_groupbox">
+      <property name="title">
+       <string>Json File</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_5">
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="json_name_line_edit"/>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="json_file_label">
+         <property name="text">
+          <string>Json File：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="json_name_label">
+         <property name="text">
+          <string>Json name：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="json_file_line_edit"/>
+       </item>
+       <item row="1" column="2">
+        <widget class="QPushButton" name="Apply_Button_injson">
+         <property name="text">
+          <string>Apply</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QPushButton" name="brower_button">
+         <property name="text">
+          <string>Browser</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QGroupBox" name="Message_groupBox">
+      <property name="title">
+       <string>Message</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_6">
+       <item row="0" column="0">
+        <widget class="QTextBrowser" name="Message_Text_Edit"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="Clear_Button">
+         <property name="text">
+          <string>Clear</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0" rowspan="5">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="title">
+       <string>                         Hardware Connect Window                           </string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QFrame" name="frame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QLabel" name="label">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>611</width>
+            <height>671</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1211</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="qrc/spi.qrc"/>
+ </resources>
+ <connections/>
+</ui>

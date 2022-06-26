@@ -1,0 +1,200 @@
+pModel-20220607
+│  des.tcl                    # tcl脚本，用于gtkwave选定波形
+│  file.txt                   # 介绍代码目录层次
+│  readme.txt                 # 环境配置
+│  run.sh                     # 运行脚本，用于运行测试代码，并在VcdWavedir生成波形
+├─Config                     # 配置文件
+│      eepromconfig.json
+│      sdramconfig.json
+│      spiconfig.json
+│      uartconfig.json 
+├─eda1.0                     # 内有exe文件，图形化界面
+├─gtkwave                    # gtkwave windows版源码
+├─Log                        # 日志文件
+├─Manager                    # 管理
+│     CodeGenerator.py        # 代码生成器
+│     func_connect.py
+│     readjson.py             # json文件读函数
+│     readwave.py             # 波形读函数
+├─Module                     # 模型库
+│  │  
+│  ├─FLASH                  # Parallel Flash接口模型
+│  │  ├─Common
+│  │  │     FlashIfc.py
+│  │  │     flash_cmd.py    # FLASH命令格式规定
+│  │  │     flash_msg.py    # FLASH命令格式产生
+│  │  │          
+│  │  ├─Flashctr           # FLASH控制器
+│  │  │      FlashCtr.py
+│  │  │      FlashCtr_test.py
+│  │  │      
+│  │  └─FlashMem           # FLASH存储器
+│  │          FlashMem.py
+│  │          FlashMem_test.py
+│  │              
+│  ├─I2C                    # IIC接口模型
+│  │  ├─Common                  
+│  │  │      i2cInterface.py
+│  │  │      i2c_cmd.py     
+│  │  │      i2c_msg.py
+│  │  │      InOut.py
+│  │  │      Synchronizer.py 
+│  │  │    
+│  │  │          
+│  │  ├─I2C_Master         # IIC Master
+│  │  │      i2c_master.py
+│  │  │      I2c_master_test.py
+│  │  │      i2c_master_warpper.py
+│  │  │    
+│  │  │           
+│  │  └─I2C_Slave          # IIC Slave
+│  │          i2c_slave.py
+│  │          i2c_slave_test.py
+│  │          i2c_slave_warpper.py
+│  │        
+│  │              
+│  ├─JTAG                  # JTAG接口模型
+│  │  │  
+│  │  ├─Common
+│  │  │      CrossOver.py
+│  │  │      Crossover_test.py
+│  │  │      jtag_ifc.py
+│  │  │      jtag_msg.py
+│  │  │      ShiftReg.py
+│  │  │      Synchronizer.py
+│  │  │    
+│  │  │          
+│  │  ├─jtag_fpga        # JTAG SLAVE
+│  │  │      jtag_fpga.py
+│  │  │      jtag_fpga_test.py
+│  │  │                  
+│  │  ├─jtag_pc          # JTAG MASTER
+│  │  │      jtag_pc.py
+│  │  │      jtag_pc_test.py
+│  │            
+│  ├─M1553b               # 1553B接口模型
+│  │  │  
+│  │  ├─Common
+│  │  │  │  decoder.py
+│  │  │  │  encoder.py
+│  │  │  │  m1553b_bc_msg.py
+│  │  │  │  m1553b_cmd.py
+│  │  │  │  m1553b_receiver.py          # 1553B解码模块&曼彻斯特解码
+│  │  │  │  m1553b_rt_msg.py
+│  │  │  │  m1553b_transmitter.py       # 1553B发送模块&曼彻斯特编码
+│  │  │  │  
+│  │  │  ├─test
+│  │  │         decoder_test.py
+│  │  │         encoder_test.py
+│  │  │         m1553b_receiver_test.py
+│  │  │         m1553b_transmitter_test.py
+│  │  │          
+│  │  ├─M1553b_bc                        # 1553B总线控制器
+│  │  │      m1553b_bus_control.py
+│  │  │      M1553_bus_control_test.py
+│  │  │      
+│  │  ├─M1553b_rt                        # 1553B远程终端
+│  │          m1553b_remote_terminal.py
+│  │          
+│  ├─PROM                                 # PROM接口模型
+│  │  ├─Common
+│  │  │      promIfc.py
+│  │  │      Synchronizer.py
+│  │  │  
+│  │  │          
+│  │  ├─prom
+│  │  │      prom.py
+│  │  │      prom_test.py
+│  │  │                  
+│  │  └─prom_rw
+│  │          prom_rw.py
+│  │          prom_rw_test.py
+│  │          
+│  ├─SPI                                   # SPI接口模型
+│  │  ├─Common
+│  │  │      DutIfcsRTL.py
+│  │  │      PullInIfc.py
+│  │  │      PushOutIfc.py
+│  │  │      ShiftReg.py
+│  │  │      SPIIfc.py
+│  │  │      Synchronizer.py
+│  │  │          
+│  │  ├─SPIMaster                         # SPI Master
+│  │  │      SpiMasterWarpped.py
+│  │  │      SpiMaster_test.py
+│  │  │      Spi_Master_Warpped__pack_size_8__clks_per_half_bit_4__pickled.v
+│  │  │      verilogpass.py
+│  │  │  
+│  │  │          
+│  │  └─SPISlave                          # SPI Slave
+│  │          SpiSlaveWarpped.py
+│  │          SpiSlave_test.py
+│  │        
+│  ├─SRAM                                  # SRAM接口模型
+│  │  ├─Common
+│  │  │      SramIfc.py
+│  │  │      sram_cmd.py
+│  │  │      sram_msg.py
+│  │  │    
+│  │  ├─SRAM                              # SRAM存储器
+│  │  │      Sram.py
+│  │  │      Sram_test.py
+│  │  │    
+│  │  └─SramCtr                           # SRAM控制器
+│  │          SramCtr.py
+│  │          SramCtr_test.py
+│  │        
+│  ├─UART                                  # UART接口模型
+│      │  
+│      ├─Common
+│      │      UARTIfc.py   
+│      │          
+│      ├─UartCtr
+│      │      UartCtr.py
+│      │      
+│      ├─Uart_submodule                    # UART子模块
+│      │  │  UartRx.py                     # UART接收模块
+│      │  │  UartTx.py                     # UART发送模块
+│      │  │              
+│      │  ├─test
+│      │          UartRx_test.py
+│      │          UartTx_test.py
+│      │        
+│      │          
+│      ├─Uart_top                          # UART模块
+│            Uart_top_non_val.py             # UART 无握手协议
+│            Uart_top_val.py                 # UART 有握手协议
+│          
+├─software                                  # 图形化界面
+│  │  browser.ui
+│  │  crc_eda.py
+│  │  design.py
+│  │  eda.py
+│  │  eda.ui
+│  │  load_ui.py
+│  │  
+│  ├─image
+│      ├─FLASH
+│      ├─I2C
+│      ├─SPI
+│      │      SPI_Master.PNG
+│      │      SPI_Slave.PNG
+│      │      
+│      ├─SRAM
+│      │      SRAM_Master.PNG
+│      │      SRAM_Slave.PNG
+│      │      
+│      └─UART
+│           
+├─TestBench                                # 连接性测试代码库
+│  │  flash_test.py
+│  │  i2c_test.py
+│  │  jtag_test.py
+│  │  m1553b_test.py
+│  │  spi_test.py
+│  │  sram_test.py
+│  │  uart_test.py
+│                  
+└─Vcdwavedir                               # 波形产生目录
+
+                    

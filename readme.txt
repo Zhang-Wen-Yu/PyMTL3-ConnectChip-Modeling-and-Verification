@@ -1,0 +1,29 @@
+使用前先将文件路径保存至python标准库下：
+（1）在python安装路径下的Lib->site-packages新建mypath.pth文件
+（2）用记事本打开，输入路径例如：D:\Desktop\pModel-20220530
+
+支持SPI的FLASH：
+（1）MX25L25645GM2I-08G
+（2）MX25U51245GM100
+（3）MTFC8GACAAAM-1M
+（4）GD9FS4G8F3AWWI
+
+DDR3 SDRAM存储器：
+（1）MT41K512M16HA
+（2）IS43TR16512BL
+
+DDR2 SDARM存储器：
+（1）MT47H128M16
+
+FLASH型的在线可编程ROM：
+（1）JXCF32P
+（2）JXCF128X
+
+USB2.0微控制器：
+（1）J68013
+
+千兆以太网收发器：
+（1）JEM88E1111
+
+多协议收发器：
+（1）MAX3160ECAP

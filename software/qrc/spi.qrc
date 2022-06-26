@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="spi">
+    <file>spi.qrc</file>
+  </qresource>
+</RCC>

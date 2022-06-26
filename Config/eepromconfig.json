@@ -1,0 +1,17 @@
+{
+    "target_name": "eepromtest",
+    "class_name": "TestHarness",
+    "file_name": "Module.EEPROM",
+    "master_file_name": "eeprom_rw",
+    "master_module_name": "eeprom_rw",
+    "master_class_name": "eeprom_rw",
+    "slave_file_name": "eeprom",
+    "slave_module_name": "eeprom",
+    "slave_class_name": "eeprom",
+    "port_num": 12,
+    "con_state": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+
+    "master_port": ["D0","D1","D2","D3", "D4", "D5", "D6", "D7"," CE1","busy","OE1","TDO"],
+    "slave_port":["prom_ifc.D0","prom_ifc.D1","prom_ifc.D2","prom_ifc.D3", "prom_ifc.D4", "prom_ifc.D5",
+        "prom_ifc.D6", "prom_ifc.D7"," prom_ifc.CE1","prom_ifc.busy","prom_ifc.OE1","prom_ifc.TDO"]
+}

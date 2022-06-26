@@ -1,0 +1,15 @@
+{
+    "target_name": "uarttest",
+    "class_name": "TestHarness",
+    "file_name": "Module.UART",
+    "master_file_name": "UARTCtr",
+    "master_module_name": "UARTCtr",
+    "master_class_name": "uartctr",
+    "slave_file_name": "Uart_top",
+    "slave_module_name": "Uart_top",
+    "slave_class_name": "uart",
+    "port_num": 2,
+    "con_state": [1, 1],
+    "master_port":["tx.uart_trans.txd","rx.uart_recv.rxd"],
+    "slave_port": ["tx.uart_trans.txd","rx.uart_recv.rxd"]
+}
